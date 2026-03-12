@@ -3,7 +3,7 @@ import styles from './card.module.css'
 
 export default function Card({venueName, imgSrc} : {venueName:string, imgSrc:string}) {
     return (
-        <div className='w-[25%] h-[300px] bg-[#EFF8FB] rounded-lg shadow-lg'>
+        <div className='w-[25%] h-[300px] bg-[#ebeffc] rounded-lg shadow-lg'>
             <div className='w-[100%] h-[60%] rounded-t-lg relative overflow-hidden'>
                 <Image
                 src={imgSrc}
@@ -13,7 +13,7 @@ export default function Card({venueName, imgSrc} : {venueName:string, imgSrc:str
                 />
             </div>
             <div className='h-[30%] p-[10px] relative flex  justify-center'>
-                <h2 className='text-[#002185] text-[1.5em] pt-[5px]'>
+                <h2 className='text-[#4b5da6] text-[1.5em] pt-[5px]'>
                     {venueName}
                 </h2>
             </div>
