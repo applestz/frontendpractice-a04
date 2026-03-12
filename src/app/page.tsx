@@ -9,7 +9,9 @@ export default function Home() {
       <Banner/>
       <div style={{margin:"20px", display:"flex", flexDirection:"row",
         flexWrap:"wrap", justifyContent:"space-around", alignContent:"space-around"}}>
-        <Card/>
+        <Card venueName="The Bloom Pavillion" imgSrc="/bloom.jpg"/>
+        <Card venueName="Spark Space" imgSrc="/sparkspace.jpg"/>
+        <Card venueName="The Grand Table" imgSrc="/grandtable.jpg"/>
       </div>
     </main>
   );

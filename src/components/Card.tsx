@@ -1,23 +1,21 @@
 import Image from 'next/image'
 import styles from './card.module.css'
 
-export default function Card() {
+export default function Card({venueName, imgSrc} : {venueName:string, imgSrc:string}) {
     return (
-        <div className={styles.card}>
-            <div className={styles.cardimg}>
+        <div className='w-[25%] h-[300px] bg-[#EFF8FB] rounded-lg shadow-lg'>
+            <div className='w-[100%] h-[60%] rounded-t-lg relative overflow-hidden'>
                 <Image
-                src={'/place.jpg'}
+                src={imgSrc}
                 alt='place picture'
                 fill={true}
                 objectFit='cover'
                 />
             </div>
-            <div className={styles.cardtext}>
-                <h2>The Bloom Pavilion</h2>
-                <h3>
-                    A stunning bouquet hall where love blossoms 
-                    and unforgettable memories are made.
-                </h3>
+            <div className='h-[30%] p-[10px] relative flex  justify-center'>
+                <h2 className='text-[#002185] text-[1.5em] pt-[5px]'>
+                    {venueName}
+                </h2>
             </div>
         </div>
     )
